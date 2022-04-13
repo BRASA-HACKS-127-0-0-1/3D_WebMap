@@ -1,0 +1,15 @@
+First of all we should generate a cloud of points from google earth pro and export as a .kmz file
+
+After that we convert that file to a .txt file using https://www.gpsvisualizer.com/convert?output_elevation
+
+We can then loud this .txt file in QGIS by adding a new delimited text layer
+
+Once the layer is created we have to generate a DEM map through some Interpolation Method. 
+
+(This process is explained at: https://www.youtube.com/watch?v=5hX6jXpkHt4)
+
+With your DEM fineshed all you have to do is add a basemap using HSGCM and then change your CRS projection system to EPSG:3857. Now you are ready to use the qis2threejs plugin. 
+
+https://www.youtube.com/watch?v=eZZ2MVLZN4o
+
+
